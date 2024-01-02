@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <title>Kart Değiştirme</title>
+</head>
+
+<body>
+
+    <div class="item-container">
+        <div class="left-side" id="photos-side">
+            <div class="background">
+                <img id="image1" src="" alt="">
+            </div>
+            <div class="window">
+                <div id="card">
+                    <div class="front">
+                        <img id="image2" src="" alt="">
+                    </div>
+                    <div class="back">
+                        <img id="image3" src="" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="right-container">
+                <h2 id="content-title"></h2>
+                <p id="content-text-first" class="fulljustify"></p>
+                <p id="content-text-second" class="fulljustify"></p>
+                <p id="content-text-third" class="fulljustify"></p>
+                <i class="bi bi-1-circle" style="width: 50px; height: 50px;"></i>
+            </div>
+        </div>
+        <button id="previous-page-button" class="btn btn-primary"><ion-icon class="previous-button" name="arrow-back"></ion-icon></ion-icon></button>
+        <button id="next-page-button" type="button" class="btn btn-primary"><ion-icon class="next-button" name="arrow-forward"></ion-icon></button>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+                // Get the body element
+                var body = document.body;
+
+                // Get the width and height of the body
+                var bodyWidth = body.offsetWidth;
+                var bodyHeight = body.offsetHeight;
+
+                // Display the width and height
+                console.log("Body Width:", bodyWidth, "Body Height:", bodyHeight);
+            });
+        </script>
+    </script>    
+
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
